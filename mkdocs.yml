@@ -1,0 +1,13 @@
+site_name: Opencoms
+theme: readthedocs
+
+nav:
+    - Home:
+        - index.md
+    - Analog systems:
+        - analog/introduction.md
+        - analog/technical-details.md
+        - Devices:
+            - ABP1: analog/devices/abp1.md
+            - APS1: analog/devices/aps1.md
+    - Digital systems: []
