@@ -9,4 +9,5 @@ nav:
         - Devices:
             - ABP1 (Beltpack 1): analog/devices/abp1/docs.md
             - APSM1 (Power supply module 1): analog/devices/apsm1/docs.md
+            - APS1 (Power supply 1): analog/devices/aps1/docs.md
     - Digital systems: []
