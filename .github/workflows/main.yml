@@ -18,8 +18,13 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
-        
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial 
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+          
+      - run: pip install mkdocs
+      
+      - run: mkdocs gh-deploy --force --clean --verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
