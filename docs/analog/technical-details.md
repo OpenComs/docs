@@ -13,12 +13,12 @@ Proper termination is crucial to prevent signal reflections and maintain signal 
 ## Power supply
 Opencomms power supplies play a vital role in the intercom system, providing power to the loop and acting as a "party-line supervisor," controlling the audio levels and preventing feedback and crosstalk.
 
-The power supplies are designed to supply a clean `30VDC` between `pin 1 (GND)` and `pin 2 (VCC)`. 
+The power supplies are designed to supply a clean `24-30VDC` between `pin 1 (GND)` and `pin 2 (VCC)`. 
 
 Termination is a critical aspect of setting up a partyline system to ensure optimal performance and signal integrity.
 In a partyline system, termination is achieved by using termination resistors placed at the end or start of the loop. This resistors is typically arround `200 ohms` and connected between `pin 1 (GND)` throught a capacitor to `pin 3 (Signal)`. 
 
-The termination resistors act as loads, absorbing the transmitted audio signal and preventing it from reflecting back into the loop and creating feedback loops.
+The termination resistors act as loads, absorbing the transmitted audio signal and preventing it from creating feedback loops.
 
 It is important to note that termination is only needed at one device in the loop (typically the power supply), and not at every station or beltpack. Terminating each device individually would result in a degraded performance of the overall system.
 
@@ -29,7 +29,7 @@ It is important to note that termination is only needed at one device in the loo
 Here is an overview of how a basic remote station should work
 ![](technical-details-remote-station-design.drawio.png)
 
-*Please be aware that while the principles outlined above are generally applicable to analog partyline remote stations, there may be variations in features and technical details between different manufacturers and models.*
+*Please be aware that while the principles outlined above are generally applicable to analog partyline remote stations, there may be variations in features and technical details between different models (and/or) manufacturers*
 
 ### Call
 When a call is initiated, it closes a circuit that introduces a DC voltage onto the partyline loop. This DC voltage is superimposed onto the existing audio signal, carrying the call signal information.

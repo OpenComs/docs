@@ -2,8 +2,7 @@ site_name: OpenComs
 theme: readthedocs
 
 nav:
-    - Home:
-        - index.md
+    - Home: index.md
     - Analog systems:
         - analog/introduction.md
         - analog/technical-details.md
