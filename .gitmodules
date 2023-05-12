@@ -1,3 +1,6 @@
 [submodule "docs/analog/devices/abp1"]
 	path = docs/analog/devices/abp1
 	url = https://github.com/OpenComs/device_abp1
+[submodule "docs/analog/devices/apsm1"]
+	path = docs/analog/devices/apsm1
+	url = https://github.com/OpenComs/device_apsm1
