@@ -1,4 +1,6 @@
 name: build
+permissions: read-all|write-all
+
 on:
   push:
     branches:
