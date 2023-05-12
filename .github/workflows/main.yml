@@ -1,6 +1,13 @@
 name: build
-permissions: read-all|write-all
 
+permissions:
+  pull-requests: write
+  deployments: write
+  repository-projects: write
+  contents: write
+  pages: write
+  
+  
 on:
   push:
     branches:
