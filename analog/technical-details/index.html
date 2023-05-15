@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Technical details - OpenComs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Technical details";
+        var mkdocs_page_input_path = "analog/technical-details.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> OpenComs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analog systems</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Technical details</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#loop">Loop</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#power-supply">Power supply</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remote-station">Remote station</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#call">Call</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rmk">RMK</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Devices</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../devices/abp1/docs/">ABP1 (Beltpack 1)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../devices/apsm1/docs/">APSM1 (Power supply module 1)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../devices/aps1/docs/">APS1 (Power supply 1)</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital systems</span></p>
+              <ul>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">OpenComs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Analog systems &raquo;</li>
+      <li>Technical details</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="technical-details">Technical details</h1>
+<p>Welcome to the technical documentation for the Opencomms Analog Partyline System. This page aims to provide an in-depth understanding of the inner workings of this intercom system.</p>
+<h2 id="loop">Loop</h2>
+<p>The loop is a fundamental part of the Opencoms intercom system, responsible for creating a communication pathway between multiple stations and beltpacks.</p>
+<p>Typically, the loop consists of a daisy-chain connection, where each device is connected in series to form a continuous loop. This ensures that audio signals can pass through each station and beltpack without interruption. </p>
+<p>Proper termination is crucial to prevent signal reflections and maintain signal integrity. </p>
+<h2 id="power-supply">Power supply</h2>
+<p>Opencomms power supplies play a vital role in the intercom system, providing power to the loop and in most cases acting as termination for the line, controlling the audio levels and preventing feedback and crosstalk.</p>
+<p>The power supplies are designed to supply a clean <code>24-30VDC</code> between <code>pin 1 (GND)</code> and <code>pin 2 (VCC)</code>. </p>
+<p>Termination is a critical aspect of setting up a partyline system to ensure optimal performance and signal integrity.
+In a partyline system, termination is achieved by using termination resistors placed at the end or start of the loop. This resistors is typically arround <code>200 ohms</code> and connected between <code>pin 1 (GND)</code> throught a capacitor to <code>pin 3 (Signal)</code>. </p>
+<p>The termination resistors act as loads, absorbing the transmitted audio signal, preventing it from creating feedback loops and ensuring the call signal doesn't last forever.</p>
+<p>It is important to note that termination is only needed at one device in the loop (typically the power supply), and not at every station or beltpack. Terminating each device individually would result in a degraded performance and lower audio level of the overall system.</p>
+<p><img alt="" src="../psu_spice.png" /></p>
+<h2 id="remote-station">Remote station</h2>
+<p>Here is an overview of how a basic remote station should work
+<img alt="" src="../technical-details-remote-station-design.drawio.png" /></p>
+<p><em>Please be aware that while the principles outlined above are generally applicable to analog partyline remote stations, there may be variations in features and technical details between different models (and/or) manufacturers</em></p>
+<h3 id="call">Call</h3>
+<p>When a call is initiated, it closes a circuit that introduces a DC voltage onto the partyline loop. This DC voltage is superimposed onto the existing audio signal, carrying the call signal information.</p>
+<p>Receiving stations within the partyline loop detect the presence of this DC voltage. Upon detecting the call signal, the station activate visual indicators, such as LEDs, or audible alerts to notify the users of an incoming call.</p>
+<h3 id="rmk">RMK</h3>
+<p>Sometime, someone leave their beltpacks talk on, this can cause annoyance and other issue, to solve this beltpacks and stations that support it can be restarted remotely by cutting the power very quickly to the intercom line.</p>
+<p>The power cut needs to by long enought to cause a restart of the stations microcontrollers but short enough to cause a buzz in the audio.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../introduction/" class="btn btn-neutral float-left" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../devices/abp1/docs/" class="btn btn-neutral float-right" title="ABP1 (Beltpack 1)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../introduction/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../devices/abp1/docs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

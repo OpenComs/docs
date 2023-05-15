@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>APS1 (Power supply 1) - OpenComs</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "APS1 (Power supply 1)";
+        var mkdocs_page_input_path = "analog/devices/aps1/docs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> OpenComs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analog systems</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../technical-details/">Technical details</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Devices</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../abp1/docs/">ABP1 (Beltpack 1)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apsm1/docs/">APSM1 (Power supply module 1)</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">APS1 (Power supply 1)</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#concept">Concept</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3d">3D</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cost">Cost</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital systems</span></p>
+              <ul>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">OpenComs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Analog systems &raquo;</li>
+          <li>Devices &raquo;</li>
+      <li>APS1 (Power supply 1)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="aps1-analog-power-supply-1">APS1 (Analog power supply 1)</h1>
+<p>The APS1 is a single line one output, 20W power supply for analog partyline communication systems with built-in terminaision and RMK.
+This power supply is the most basic power supply unit possible. </p>
+<h2 id="concept">Concept</h2>
+<p>The APS1 was designed for simplicity and as a base to show how the APSM1 module could be used.</p>
+<p>The power supply is composed of:</p>
+<ul>
+<li>A 220v IEC C14 AC input</li>
+<li>A male XLR partyline output</li>
+<li>A rocker switch for the enabling the terminaison</li>
+<li>One iluminated power switch</li>
+<li>One RMK switch</li>
+</ul>
+<h2 id="3d">3D</h2>
+<p>Here is a render of the case:</p>
+<p><img alt="" src="../res/SLDWORKS_2023-05-15_09-04-27_1856d9e2-b9e2-4998-9710-f7ac9daac4a2.png" />
+<img alt="" src="../res/SLDWORKS_2023-05-15_09-04-37_f86e0818-050d-4159-b0d1-a0265ded1b9b.png" />
+<img alt="" src="../res/SLDWORKS_2023-05-15_09-05-18_934b81bd-3fa5-415c-b04e-11f0b99995bd.png" /></p>
+<p>And here is the files for 3D printing:</p>
+<ul>
+<li>Case: <a href="../3d/case.SLDPRT">[Solidworks source]</a> <a href="../3d/case.STL">[STL]</a> </li>
+<li>Case cover: <a href="../3d/case_cover.STL">[STL]</a> </li>
+</ul>
+<h2 id="cost">Cost</h2>
+<p>The overall cost of this device is pretty low.</p>
+<p>Here is an approximation of the cost to build 1 power supply:</p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Bought were</th>
+<th>Cost</th>
+<th>Quantity</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APSM1</td>
+<td>-</td>
+<td>&lt;5eur</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/4001022630440.html">HLK-20M24</a></td>
+<td>Aliexpress</td>
+<td>2.96eurs</td>
+<td>1</td>
+<td>The actuall power supply 24v 20W</td>
+</tr>
+<tr>
+<td><a href="https://fr.farnell.com/neutrik/nc3maah/plug-xlr-pcb-horizontal-3pole/dp/1310044">NC3MAAH (Male XLR)</a></td>
+<td>Farnell</td>
+<td>1.656eur</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fr.aliexpress.com/item/1005002348278493.html">Latching 12mm switch with LED</a></td>
+<td>Aliexpress</td>
+<td>1.61eur</td>
+<td>1</td>
+<td>Power switch</td>
+</tr>
+<tr>
+<td><a href="https://fr.aliexpress.com/item/4001233376500.html">SPST ON-ON Switch</a></td>
+<td>Aliexpress</td>
+<td>1eur</td>
+<td>1</td>
+<td>Terminaison switch</td>
+</tr>
+</tbody>
+</table>
+<p>Which comes to approximatively 8-10eur without 3d printed parts
+<em>Note that some of the part here can be salvaged or found for way cheaper, which will bring the cost down even more</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../apsm1/docs/" class="btn btn-neutral float-left" title="APSM1 (Power supply module 1)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../apsm1/docs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

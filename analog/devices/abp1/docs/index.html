@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>ABP1 (Beltpack 1) - OpenComs</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ABP1 (Beltpack 1)";
+        var mkdocs_page_input_path = "analog/devices/abp1/docs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> OpenComs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analog systems</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../technical-details/">Technical details</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Devices</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ABP1 (Beltpack 1)</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#concept">Concept</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pcb-schematics">PCB &amp; Schematics</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-pcb">Main PCB</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#front-panel">Front panel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#back-panel">Back panel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#back-panel-jacks">Back panel jacks</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3d">3D</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#firmware">Firmware</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cost">Cost</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apsm1/docs/">APSM1 (Power supply module 1)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../aps1/docs/">APS1 (Power supply 1)</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital systems</span></p>
+              <ul>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">OpenComs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Analog systems &raquo;</li>
+          <li>Devices &raquo;</li>
+      <li>ABP1 (Beltpack 1)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="abp1-analog-beltpack-1">ABP1 (Analog beltpack 1)</h1>
+<p>The ABP1 is a straightforward and reliable beltpack intercom for seamless communication. This beltpack uses the 2 wire partyline interface.</p>
+<h2 id="concept">Concept</h2>
+<p>The ABP1 was designed for simplicity. It provides users with a compact and lightweight device that seamlessly integrates into OpenComs partyline analog system. The ABP1 serves as a great starting point for anyone looking to build and/or extend their own analog beltpack for partyline intercom systems.</p>
+<p>The idea was to create a "as simple as possible" starting point for future versions. For example instead of the typicall 4-pin XLR found on beltbacks for headsets, the APB1 uses two 3.5mm jacks. Here are some other differences:</p>
+<p>The intercom is composed of:</p>
+<ul>
+<li>One talk button</li>
+<li>One call button</li>
+<li>One volume knob</li>
+<li>One sidetone adjustment potentiometer</li>
+<li>One male and one female XLR for the partyline</li>
+<li>Two 3.5mm jack (headphones + electret microphone)</li>
+<li>16 Leds for the front panel indicator</li>
+</ul>
+<p>To facilitate the building process of this beltpack, it is composed of 4 individual PCBs:</p>
+<ul>
+<li>Front panel<ul>
+<li>Holes for the buttons, volume and sidetone</li>
+<li>16 Side facing LEDs (WS2812B-<strong>4020</strong>)</li>
+<li>Pads for a potentiometer placed up-side-down for the sidetone</li>
+</ul>
+</li>
+<li>Back panel<ul>
+<li>Holes for the 2 XLR connectors</li>
+<li>Holes for the 2 3.5mm jacks</li>
+<li>Holes for the two mounting screw</li>
+</ul>
+</li>
+<li>Back panel jack board<ul>
+<li>Simple board to hold the two jacks at a right angle</li>
+</ul>
+</li>
+</ul>
+<p>As the digital side fully control the talk, mute and call signals, this intercom also supports RMK (remote-mic-kill) provided that the off pulse is long enought to reset the microcontroller.</p>
+<h2 id="pcb-schematics">PCB &amp; Schematics</h2>
+<h3 id="main-pcb">Main PCB</h3>
+<ul>
+<li>Schematic: <a href="../electronics/main_pcb/SCH_OpenComs_ABP1_2023-05-12.pdf">[PDF]</a> <a href="../electronics/main_pcb/SCH_EasyEDA_OpenComs_ABP1_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/main_pcb/SCH_AltiumExport_OpenComs_ABP1_2023-05-12.zip">[Altium]</a></li>
+<li>PCB: <a href="../electronics/main_pcb/PCB_EasyEDA_OpenComs_ABP1_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/main_pcb/PCB_AltiumExport_OpenComs_ABP1_2023-05-12.pcbdoc">[Altium]</a> <a href="../electronics/main_pcb/PCB_Gerber_PCB_OpenComs_ABP1.zip">[Gerber]</a></li>
+<li>Bom: <a href="../electronics/main_pcb/BOM_OpenComs_ABP1_2023-05-12.csv">[CSV]</a></li>
+</ul>
+<h3 id="front-panel">Front panel</h3>
+<ul>
+<li>Schematic: <a href="../electronics/front_panel/SCH_PDF_OpenComs_ABP1_Front-panel.pdf">[PDF]</a> <a href="../electronics/front_panel/SCH_EasyEDA_OpenComs_ABP1_Front-panel_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/front_panel/SCH_Altium_OpenComs_ABP1_Front-panel_.schdoc">[Altium]</a></li>
+<li>PCB: <a href="../electronics/front_panel/PCB_EasyEDA_OpenComs_ABP1_Front-panel_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/front_panel/PCB_Altium_OpenComs_ABP1_Front-panel_2023-05-12.pcbdoc">[Altium]</a> <a href="../electronics/front_panel/PCB_Gerber_OpenComs_ABP1_Front-panel.zip">[Gerber]</a></li>
+<li>Bom: <a href="../electronics/front_panel/BOM_OpenComs_ABP1_Front-panel_2023-05-12.csv">[CSV]</a></li>
+</ul>
+<h3 id="back-panel">Back panel</h3>
+<ul>
+<li>Schematic: none</li>
+<li>PCB: <a href="../electronics/back_panel/PCB_EasyEDA_OpenComs_ABP1_Back-panel_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/back_panel/PCB_Altium_OpenComs_ABP1_Back-panel_2023-05-12.pcbdoc">[Altium]</a> <a href="../electronics/back_panel/PCB_Gerber_OpenComs_ABP1_Back-panel_2023-05-12.zip">[Gerber]</a></li>
+<li>Bom: none</li>
+</ul>
+<h3 id="back-panel-jacks">Back panel jacks</h3>
+<ul>
+<li>Schematic: <a href="../electronics/back_panel_jacks/SCH_PDF_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.pdf">[PDF]</a> <a href="../electronics/back_panel_jacks/SCH_EasyEDA_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/back_panel_jacks/SCH_Altium_OpenComs_ABP1_Back-panel_Jacks_Connectors_2023-05-12.schdoc">[Altium]</a></li>
+<li>PCB: <a href="../electronics/back_panel_jacks/PCB_EasyEDA_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.json">[EasyEDA]</a> <a href="../electronics/back_panel_jacks/PCB_Altium_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.pcbdoc">[Altium]</a> <a href="../electronics/back_panel_jacks/PCB_Gerber_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.zip">[Gerber]</a></li>
+<li>Bom: <a href="../electronics/back_panel_jacks/BOM_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.csv">[CSV]</a></li>
+</ul>
+<h2 id="3d">3D</h2>
+<p>Front:
+<img alt="" src="../res/3d_render.jpg" />
+Back:
+<img alt="" src="../res/3d_render2.jpg" />
+<em>Note: These screenshot may not be fully up to date, especially the models of PCBs</em></p>
+<p>The 3D printed case is availible at: <a href="3d/case.sldprt">[Solidworks source]</a> <a href="3d/case.stl">[STL]</a> </p>
+<h2 id="firmware">Firmware</h2>
+<p>The ABP1 digital side is based on the Atmega328p, the same as the arduino uno/nano/.... which makes it very easilly hackable to do what you want.<br>
+The firmware can be found here:<a href="https://github.com/OpenComs/device_abp1/tree/main/firmware">https://github.com/OpenComs/device_abp1/tree/main/firmware</a></p>
+<p>At the start you'll find some configuration values:</p>
+<pre><code class="language-cpp">#define CONF_CALL_BLINK_DURATION 1500
+#define CONF_CALL_VIBRATE_AFTER 5000
+#define CONF_CALL_BUZZ_AFTER 10000
+#define CONF_TALK_LATCH_THRESHOLD 250
+</code></pre>
+<ul>
+<li>The <code>CONF_CALL_BLINK_DURATION</code> sets how long will the leds blink if a call is detected</li>
+<li>The <code>CONF_CALL_VIBRATE_AFTER</code> sets how long a call signal need to be detected to enable the vibration motor</li>
+<li>The <code>CONF_CALL_BUZZ_AFTER</code> sets how long a call signal need to be detected to enable the buzzer</li>
+<li>The <code>CONF_TALK_LATCH_THRESHOLD</code> set the maximum time the talk button should pressed to latch the state change instead of the tremporary change</li>
+</ul>
+<h2 id="cost">Cost</h2>
+<p>The overall cost of this device is pretty low, especially if you build multiple of them.</p>
+<p>Here is an approximation of the cost to build 5 beltpacks:</p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Bought were</th>
+<th>Cost</th>
+<th>Quantity</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main PCB</td>
+<td>JLCPCB</td>
+<td>2.22eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>Main PCB assembly</td>
+<td>JLCPCB</td>
+<td>34.97eur</td>
+<td>5</td>
+<td>Economic PCBA, most of the components</td>
+</tr>
+<tr>
+<td>Front panel</td>
+<td>JLCPCB</td>
+<td>5.08eur</td>
+<td>5</td>
+<td>Black PCB with white silkscreen</td>
+</tr>
+<tr>
+<td>Back panel</td>
+<td>JLCPCB</td>
+<td>5.08eur</td>
+<td>5</td>
+<td>Black PCB with white silkscreen</td>
+</tr>
+<tr>
+<td>Back panel jacks</td>
+<td>JLCPCB</td>
+<td>3.62eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fr.farnell.com/neutrik/nc3maah/plug-xlr-pcb-horizontal-3pole/dp/1310044">NC3MAAH (Male XLR)</a></td>
+<td>Farnell</td>
+<td>8.28eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fr.farnell.com/neutrik/nc3faah1/socket-xlr-pcb-horizontal-3pole/dp/1310019">NC3FAAH1 (Female XLR)</a></td>
+<td>Farnell</td>
+<td>7.74eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/1005003302861259.html">Red button (12mm)</a></td>
+<td>Aliexpress</td>
+<td>2.88eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/1005003302861259.html">Green button (12mm)</a></td>
+<td>Aliexpress</td>
+<td>2.88eur</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/1005005130412879.html">PJ307 3.5mm jack</a></td>
+<td>Aliexpress</td>
+<td>1.59eur</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/1005003999865721.html">WS2812B-4020</a></td>
+<td>Aliexpress</td>
+<td>11.47eur</td>
+<td>100</td>
+<td>MOQ is 100 only 16 needed by intercom</td>
+</tr>
+<tr>
+<td><a href="https://fr.farnell.com/bourns/ptd902-2015f-a103/potentiometre-audio-10k-20-0-025w/dp/2396034">PTD902-2015F-A103</a></td>
+<td>Farnell</td>
+<td>15.54eur</td>
+<td>5</td>
+<td>Any 5k to 10k <strong>log</strong> potentiometer is fine</td>
+</tr>
+<tr>
+<td><a href="https://aliexpress.com/item/33050960926.html">5k trimpot</a></td>
+<td>Aliexpress</td>
+<td>2.56eur</td>
+<td>100</td>
+<td>MOQ is 100 only 5 needed</td>
+</tr>
+</tbody>
+</table>
+<p>Without 3D printer filament and other tools nesseary to build these the raw cost of the components for 5 beltpacks amount to arround <code>104eur</code> with is arround <code>21eur</code> per intercom.</p>
+<p><em>Note that some of the part here can be salvaged or found for way cheaper, which will bring the cost down even more</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../../technical-details/" class="btn btn-neutral float-left" title="Technical details"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../apsm1/docs/" class="btn btn-neutral float-right" title="APSM1 (Power supply module 1)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../../technical-details/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../apsm1/docs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
